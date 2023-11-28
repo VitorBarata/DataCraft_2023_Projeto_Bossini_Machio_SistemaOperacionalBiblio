@@ -10,7 +10,7 @@ import java.sql.ResultSet;
  *
  * @author vitor
  */
-   public class CtrlLivros {
+   public class CtrllLivros {
     
     Querys _Query = new Querys();
     
