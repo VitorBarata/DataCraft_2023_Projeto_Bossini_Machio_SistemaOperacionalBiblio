@@ -1,4 +1,5 @@
 
+import Banco.Querys.Querys;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
@@ -10,7 +11,7 @@ public class CntrlNota {
         
         String sql = _Query.InsertNotas();
         
-        try (Connection c = ConexaoBanco.obtemConexao()) {
+        try (Connection c = conection.ModuloConexao.conector()) {
             
             PreparedStatement ps = c.prepareStatement(sql);
             
